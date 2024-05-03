@@ -74,8 +74,8 @@ const ProductInfo = () => {
           </>
         ) : (
           <>
-            <div className='max-w-6xl px-4 mx-auto'>
-              <div className='flex flex-wrap mb-24 -mx-4'>
+            <div className='max-w-6xl px-4 mx-auto '>
+              <div className='flex flex-wrap mb-24 -mx-4  '>
                 <div className=' px-4 mb-8 md:w-2/4  md:mb-0 '>
                   
                     <div className=' h-6/6 w-11/12 border-2  '>
@@ -96,7 +96,7 @@ const ProductInfo = () => {
                       ) : (
                         <button
                           onClick={() => addCart(product)}
-                          className='w-64 h-12   text-center text-gray-100 bg-[#798F46] border border-transparent hover:bg-[#353434] hover:text-gray-100  rounded-none'
+                          className='w-64 h-12   text-center text-gray-100 bg-[#798F46] border border-transparent hover:bg-[#353434] hover:text-gray-100  rounded-none '
                         >
                           Add to cart
                         </button>
@@ -111,10 +111,10 @@ const ProductInfo = () => {
                         <span> Price:₹ {product?.price}</span>
                       </p>
                       <div className="text-[#8D9B39] text-center mt-2 mb-6">Most Recommended</div>
-                      <div className="flex gap-2">
-                        <div className=" border border-gray-500 w-40 h-28"><p className="w-36 text-xs text-center mt-6 ml-2">50 counts(Pack of 1)<br/><span className="text-gray-400"> 50 counts of fresh product in a box </span><br/>Rs.349</p></div>
-                        <div className="border border-gray-500 w-40 h-28"><p className="w-36 text-xs text-center mt-6 ml-2">50 counts(Pack of 1)<br/><span className="text-gray-400"> 50 counts of fresh product in a box </span><br/>Rs.349</p></div>
-                        <div className="border border-gray-500 w-40 h-28"><p className="w-36 text-xs text-center mt-6 ml-2">50 counts(Pack of 1)<br/><span className="text-gray-400"> 50 counts of fresh product in a box </span><br/>Rs.349</p></div>
+                      <div className="flex gap-2 lg:gap-4 ">
+                        <div className=" border border-gray-500 w-40 h-28 lg:w-32"><p className="w-36 text-xs text-center mt-6 ml-2 lg:w-32 lg:-ml-1.5">50 counts(Pack of 1)<br/><span className="text-gray-400"> 50 counts of fresh product in a box </span><br/>Rs.349</p></div>
+                        <div className="border border-gray-500 w-40 h-28  lg:w-32"><p className="w-36 text-xs text-center mt-6 ml-2 lg:w-32 lg:-ml-1.5">50 counts(Pack of 1)<br/><span className="text-gray-400"> 50 counts of fresh product in a box </span><br/>Rs.349</p></div>
+                        <div className="border border-gray-500 w-40 h-28  lg:w-32"><p className="w-36 text-xs text-center mt-6 ml-2 lg:w-32 lg:-ml-1.5">50 counts(Pack of 1)<br/><span className="text-gray-400"> 50 counts of fresh product in a box </span><br/>Rs.349</p></div>
                       </div>
                       <div className="mt-6 leading-8">
                        <p className="flex "> <span className="mt-2 mr-2 "> <FaCheckCircle color="#8D9B39" /> </span>Bulk ordering available for events.</p>

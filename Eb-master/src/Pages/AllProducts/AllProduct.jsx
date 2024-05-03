@@ -43,17 +43,18 @@ const AllProduct = () => {
         </div>
 
         {/* main  */}
-        <section className='text-gray-600 body-font'>
+        <section className='text-gray-600 body-font '>
           <div className='container px-5 lg:px-0 py-5 mx-auto'>
-            <div className='flex flex-wrap -m-4'>
+          <div className='flex flex-wrap-m-4 sm:flex sm:flex-col lg:flex lg:flex-row lg:gap-20 lg:flex-wrap '>
+
               {getAllProduct.map((item, index) => {
                 const { id, title, price, productImageUrl } = item;
                 return (
-                  <div key={index} className='p-4 w-full md:w-1/4'>
-                    <div className='h-full border border-gray-300 rounded-xl overflow-hidden shadow-md cursor-pointer'>
+                  <div key={index} className='p-4 w-full md:w-1/4 '>
+                    <div className='h-full border border-gray-300 rounded-xl overflow-hidden shadow-md cursor-pointer lg:h-96 lg:w-72'>
                       <img
                         onClick={() => navigate(`/productinfo/${id}`)}
-                        className='lg:h-80  h-96 w-full mb-7'
+                        className='lg:h-40 lg:w-52 lg:ml-10 lg:mt-4 h-96 w-full mb-7  '
                         src={productImageUrl}
                         alt='blog'
                       />

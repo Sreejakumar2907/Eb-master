@@ -5,15 +5,15 @@ const About = () => {
     <>
       <h1 className='text-center font-bold text-4xl m-12 '>About Us</h1>
 
-      <div className='flex flex-col items-center justify-center gap-10'>
-        <div className='flex gap-10 w-9/12'>
+      <div className='flex flex-col items-center justify-center gap-10  lg:flex lg:flex-row lg:flex-wrap '>
+        <div className='flex gap-10 w-9/12 lg: w-11/12 '>
           <div>
             <img
-              className='w-6/6'
+              className='w-6/6 lg:w-10/12'
               src='https://img.freepik.com/free-photo/coconut-palm-tree_74190-4526.jpg?t=st=1713412307~exp=1713415907~hmac=a0c155902a43730352dea0e533f0e44aabf000398bc80ca7d9a7da5b01ce6853&w=2000'
             />
           </div>
-          <div className='flex flex-col justify-center items-center w-6/6 '>
+          <div className='flex flex-col justify-center items-center w-6/6  '>
             <h3 className=' text-2xl mb-2  font-bold text-[#99B559] '>
               Who we are?
             </h3>
